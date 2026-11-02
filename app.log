@@ -1,0 +1,57 @@
+2026-11-01 23:16:15,460 [INFO] [PromosBancarias]: --- Iniciando scraping de Santander ---
+2026-11-01 23:16:15,461 [INFO] [PromosBancarias]: Consultando marcas de supermercados Santander: https://www.santander.com.ar/bff-benefits/brands?categories=SUP&limit=100
+2026-11-01 23:16:15,706 [INFO] [PromosBancarias]: Santander: 25 marcas de supermercados obtenidas.
+2026-11-01 23:16:18,887 [INFO] [PromosBancarias]: [Santander] Sincronización exitosa: 19 encontradas, 19 nuevas, 0 actualizadas, 0 vencidas.
+2026-11-01 23:16:18,888 [INFO] [PromosBancarias]: --- Iniciando scraping de Banco Hipotecario ---
+2026-11-01 23:16:18,888 [INFO] [PromosBancarias]: Consultando beneficios Banco Hipotecario: https://www.hipotecario.com.ar/beneficios/
+2026-11-01 23:16:20,833 [INFO] [PromosBancarias]: Hipotecario: 27 tarjetas de alianzas encontradas.
+2026-11-01 23:16:28,923 [INFO] [PromosBancarias]: [Banco Hipotecario] Sincronización exitosa: 7 encontradas, 7 nuevas, 0 actualizadas, 0 vencidas.
+2026-11-01 23:16:28,924 [INFO] [PromosBancarias]: --- Iniciando scraping de Supervielle ---
+2026-11-01 23:16:28,924 [INFO] [PromosBancarias]: Consultando promociones de supermercados en Supervielle: https://www.supervielle.com.ar/personas/beneficios/descuentos/supermercados
+2026-11-01 23:16:29,545 [INFO] [PromosBancarias]: Supervielle: 30 promociones obtenidas del buscador oficial.
+2026-11-01 23:16:29,560 [INFO] [PromosBancarias]: [Banco Supervielle] Sincronización exitosa: 14 encontradas, 14 nuevas, 0 actualizadas, 0 vencidas.
+2026-11-01 23:19:03,601 [INFO] [PromosBancarias]: Servicio de actualización en segundo plano iniciado (intervalo: 6.0 horas).
+2026-11-01 23:20:03,726 [INFO] [PromosBancarias]: Servicio de actualización en segundo plano iniciado (intervalo: 6.0 horas).
+2026-11-01 23:20:10,729 [INFO] [PromosBancarias]: Servicio de actualización en segundo plano detenido.
+2026-11-01 23:22:18,471 [INFO] [PromosBancarias]: Servicio de actualización en segundo plano iniciado (intervalo: 6.0 horas).
+2026-11-01 23:23:13,491 [INFO] [PromosBancarias]: Servicio de actualización en segundo plano detenido.
+2026-11-01 23:24:42,810 [INFO] [PromosBancarias]: Servicio de actualización en segundo plano iniciado (intervalo: 6.0 horas).
+2026-11-01 23:25:11,767 [INFO] [PromosBancarias]: Iniciando actualización manual...
+2026-11-01 23:25:11,771 [INFO] [PromosBancarias]: --- Iniciando scraping de Santander ---
+2026-11-01 23:25:11,773 [INFO] [PromosBancarias]: Consultando marcas de supermercados Santander: https://www.santander.com.ar/bff-benefits/brands?categories=SUP&limit=100
+2026-11-01 23:25:11,950 [INFO] [PromosBancarias]: Santander: 25 marcas de supermercados obtenidas.
+2026-11-01 23:25:14,734 [INFO] [PromosBancarias]: [Santander] Sincronización exitosa: 19 encontradas, 0 nuevas, 0 actualizadas, 1 vencidas.
+2026-11-01 23:25:14,734 [INFO] [PromosBancarias]: --- Iniciando scraping de Banco Hipotecario ---
+2026-11-01 23:25:14,734 [INFO] [PromosBancarias]: Consultando beneficios Banco Hipotecario: https://www.hipotecario.com.ar/beneficios/
+2026-11-01 23:25:15,671 [INFO] [PromosBancarias]: Hipotecario: 27 tarjetas de alianzas encontradas.
+2026-11-01 23:25:20,488 [INFO] [PromosBancarias]: [Banco Hipotecario] Sincronización exitosa: 7 encontradas, 0 nuevas, 0 actualizadas, 0 vencidas.
+2026-11-01 23:25:20,488 [INFO] [PromosBancarias]: --- Iniciando scraping de Supervielle ---
+2026-11-01 23:25:20,488 [INFO] [PromosBancarias]: Consultando promociones de supermercados en Supervielle: https://www.supervielle.com.ar/personas/beneficios/descuentos/supermercados
+2026-11-01 23:25:20,849 [INFO] [PromosBancarias]: Supervielle: 30 promociones obtenidas del buscador oficial.
+2026-11-01 23:25:20,863 [INFO] [PromosBancarias]: [Banco Supervielle] Sincronización exitosa: 14 encontradas, 14 nuevas, 0 actualizadas, 0 vencidas.
+2026-11-01 23:39:30,588 [INFO] [PromosBancarias]: --- Sincronizando promociones de Córdoba para Santander ---
+2026-11-01 23:39:30,589 [INFO] [PromosBancarias]: Consultando marcas de supermercados Santander: https://www.santander.com.ar/bff-benefits/brands?categories=SUP&limit=100
+2026-11-01 23:39:30,913 [INFO] [PromosBancarias]: Santander: 25 marcas de supermercados obtenidas.
+2026-11-01 23:39:33,118 [INFO] [PromosBancarias]: [Santander] Sincronización exitosa: 9 encontradas, 0 nuevas, 0 actualizadas, 10 vencidas.
+2026-11-01 23:39:33,120 [INFO] [PromosBancarias]: --- Sincronizando promociones de Córdoba para Banco Hipotecario ---
+2026-11-01 23:39:33,120 [INFO] [PromosBancarias]: Consultando beneficios Banco Hipotecario: https://www.hipotecario.com.ar/beneficios/
+2026-11-01 23:39:34,136 [INFO] [PromosBancarias]: Hipotecario: 27 tarjetas de alianzas encontradas.
+2026-11-01 23:39:39,086 [INFO] [PromosBancarias]: [Banco Hipotecario] Sincronización exitosa: 3 encontradas, 0 nuevas, 0 actualizadas, 4 vencidas.
+2026-11-01 23:39:39,086 [INFO] [PromosBancarias]: --- Sincronizando promociones de Córdoba para Supervielle ---
+2026-11-01 23:39:39,087 [INFO] [PromosBancarias]: Consultando promociones de supermercados en Supervielle: https://www.supervielle.com.ar/personas/beneficios/descuentos/supermercados
+2026-11-01 23:39:40,567 [INFO] [PromosBancarias]: Supervielle: 30 promociones obtenidas del buscador oficial.
+2026-11-01 23:39:40,580 [INFO] [PromosBancarias]: [Banco Supervielle] Sincronización exitosa: 5 encontradas, 5 nuevas, 0 actualizadas, 0 vencidas.
+2026-11-01 23:40:45,551 [INFO] [PromosBancarias]: --- Sincronizando promociones de Córdoba para Santander ---
+2026-11-01 23:40:45,553 [INFO] [PromosBancarias]: Consultando marcas de supermercados Santander: https://www.santander.com.ar/bff-benefits/brands?categories=SUP&limit=100
+2026-11-01 23:40:45,759 [INFO] [PromosBancarias]: Santander: 25 marcas de supermercados obtenidas.
+2026-11-01 23:40:48,413 [INFO] [PromosBancarias]: [Santander] Sincronización exitosa: 9 encontradas, 9 nuevas, 0 actualizadas, 0 vencidas.
+2026-11-01 23:40:48,415 [INFO] [PromosBancarias]: --- Sincronizando promociones de Córdoba para Banco Hipotecario ---
+2026-11-01 23:40:48,416 [INFO] [PromosBancarias]: Consultando beneficios Banco Hipotecario: https://www.hipotecario.com.ar/beneficios/
+2026-11-01 23:40:49,425 [INFO] [PromosBancarias]: Hipotecario: 27 tarjetas de alianzas encontradas.
+2026-11-01 23:40:54,327 [INFO] [PromosBancarias]: [Banco Hipotecario] Sincronización exitosa: 3 encontradas, 3 nuevas, 0 actualizadas, 0 vencidas.
+2026-11-01 23:40:54,328 [INFO] [PromosBancarias]: --- Sincronizando promociones de Córdoba para Supervielle ---
+2026-11-01 23:40:54,329 [INFO] [PromosBancarias]: Consultando promociones de supermercados en Supervielle: https://www.supervielle.com.ar/personas/beneficios/descuentos/supermercados
+2026-11-01 23:40:54,737 [INFO] [PromosBancarias]: Supervielle: 30 promociones obtenidas del buscador oficial.
+2026-11-01 23:40:54,750 [INFO] [PromosBancarias]: [Banco Supervielle] Sincronización exitosa: 5 encontradas, 5 nuevas, 0 actualizadas, 0 vencidas.
+2026-11-01 23:44:07,908 [INFO] [PromosBancarias]: Servicio de actualización en segundo plano iniciado (intervalo: 6.0 horas).
+2026-11-01 23:44:26,914 [INFO] [PromosBancarias]: Servicio de actualización en segundo plano detenido.

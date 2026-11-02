@@ -1,0 +1,194 @@
+# 1. Rol del desarrollador
+
+Actúa como un desarrollador de software especializado en Python, automatización de navegación web, extracción de información (Web Scraping) y desarrollo de interfaces gráficas.
+
+Tu objetivo es desarrollar una aplicación de escritorio utilizando Python, cuya función principal sea buscar, recopilar, organizar y mostrar las promociones bancarias vigentes en supermercados de Argentina.
+
+# 2. Objetivo general de la aplicación
+
+Desarrollar una aplicación que permita consultar automáticamente las páginas web oficiales de los siguientes bancos:
+
+* Banco Santander.
+* Banco Hipotecario.
+* Banco Supervielle.
+
+La aplicación deberá identificar y recopilar exclusivamente las promociones bancarias relacionadas con supermercados.
+
+Deberá presentar la información de manera clara, visualmente organizada y separada por entidad bancaria.
+
+# 3. Fuentes de información
+
+La aplicación deberá obtener información únicamente de las páginas web oficiales de promociones de los siguientes bancos:
+
+* Santander: https://www.santander.com.ar/
+* Hipotecario: https://www.hipotecario.com.ar/
+* Supervielle: https://www.supervielle.com.ar/
+
+El sistema deberá navegar por las secciones de beneficios, descuentos y promociones de cada entidad.
+
+IMPORTANTE:
+
+* No utilizar páginas de terceros.
+* No consultar redes sociales.
+* No utilizar información de sitios de comparación de descuentos.
+* No inventar promociones ni completar información que no figure en las fuentes oficiales.
+* Siempre que sea posible, guardar el enlace directo a la promoción original.
+
+# 4. Funcionalidades principales
+
+## 4.1. Búsqueda automática de promociones
+
+La aplicación deberá ingresar a las páginas oficiales de los tres bancos y buscar promociones relacionadas exclusivamente con supermercados.
+
+Deberá identificar establecimientos como supermercados, cadenas de alimentación y comercios de venta de productos de consumo cotidiano.
+
+Deberá descartar promociones correspondientes a:
+
+* Restaurantes.
+* Combustibles.
+* Indumentaria.
+* Electrodomésticos.
+* Entretenimiento.
+* Turismo.
+* Cualquier otro rubro que no sea supermercado.
+
+## 4.2. Extracción de información
+
+Por cada promoción encontrada, el sistema deberá recopilar los siguientes datos:
+
+1. Banco al que pertenece.
+2. Nombre del supermercado.
+3. Porcentaje de descuento.
+4. Día o días de vigencia.
+5. Tope de reintegro, si existe.
+6. Medio de pago requerido (tarjeta de crédito, débito, etc.).
+7. Condiciones particulares de la promoción.
+8. Fecha de inicio y finalización, cuando estén disponibles.
+9. Enlace a la promoción original.
+10. Fecha y hora de la última consulta.
+
+Si algún dato no está disponible en la página oficial, deberá indicarse como "No especificado".
+
+## 4.3. Actualización automática
+
+La aplicación deberá mantenerse actualizada mediante consultas periódicas a las páginas oficiales.
+
+Se establece como requisito:
+
+* Realizar una búsqueda automática cada 6 horas.
+* Permitir ejecutar una actualización manual mediante un botón.
+* Detectar promociones nuevas.
+* Detectar promociones modificadas.
+* Identificar promociones vencidas.
+* Eliminar de la vista principal las promociones que ya no estén vigentes, conservando su registro histórico si corresponde.
+
+La aplicación deberá evitar mostrar información desactualizada como si estuviera vigente.
+
+Si una página bancaria no está disponible, deberá conservar los últimos datos obtenidos e indicar cuándo se realizó la última actualización exitosa.
+
+# 5. Diseño de la interfaz gráfica
+
+La aplicación deberá contar con una interfaz gráfica sencilla, moderna y fácil de utilizar.
+
+La pantalla principal deberá estar dividida en tres secciones independientes:
+
+## SECCIÓN 1: BANCO SANTANDER
+
+Mostrar todas las promociones encontradas de supermercados correspondientes a Santander.
+
+Cada promoción deberá visualizarse mediante una tarjeta informativa que contenga:
+
+* Supermercado.
+* Porcentaje de descuento.
+* Día de la promoción.
+* Tope de reintegro.
+* Condiciones de utilización.
+* Botón para consultar la promoción original.
+
+## SECCIÓN 2: BANCO HIPOTECARIO
+
+Mostrar todas las promociones encontradas de supermercados correspondientes al Banco Hipotecario.
+
+Utilizar el mismo formato de presentación que en Santander.
+
+## SECCIÓN 3: BANCO SUPERVIELLE
+
+Mostrar todas las promociones encontradas de supermercados correspondientes a Supervielle.
+
+Utilizar el mismo formato de presentación que en los otros bancos.
+
+# 6. Herramientas y tecnologías
+
+Utilizar Python como lenguaje principal.
+
+Se recomienda utilizar:
+
+* Requests: para realizar solicitudes HTTP.
+* BeautifulSoup: para analizar y extraer información HTML.
+* Selenium o Playwright: cuando las páginas utilicen contenido dinámico.
+* Tkinter o CustomTkinter: para desarrollar la interfaz gráfica.
+* SQLite: para almacenar las promociones recopiladas.
+* Schedule o APScheduler: para programar las actualizaciones automáticas.
+
+Seleccionar las herramientas más convenientes según las características de cada página web.
+
+# 7. Organización de la información
+
+La información deberá presentarse de manera ordenada y fácil de interpretar.
+
+Cada banco deberá tener su propia sección y las promociones deberán aparecer agrupadas por supermercado.
+
+Cuando existan varias promociones para un mismo supermercado, deberán mostrarse individualmente.
+
+La aplicación deberá permitir identificar rápidamente:
+
+* Qué banco ofrece el descuento.
+* En qué supermercado se aplica.
+* Cuánto es el descuento.
+* Qué día se puede aprovechar.
+* Cuál es el tope de reintegro.
+* Cuáles son las condiciones.
+
+# 8. Restricciones del sistema
+
+La aplicación tendrá una única finalidad: recopilar, organizar y mostrar información sobre promociones bancarias de supermercados.
+
+NO deberá:
+
+* Realizar operaciones bancarias.
+* Iniciar sesión en cuentas bancarias.
+* Solicitar datos personales.
+* Realizar compras.
+* Procesar pagos.
+* Gestionar tarjetas.
+* Enviar notificaciones comerciales.
+* Incorporar promociones de otros rubros.
+* Generar promociones ficticias.
+
+La aplicación tampoco deberá intentar acceder a información protegida ni eludir mecanismos de seguridad de los sitios bancarios.
+
+Deberá respetar las condiciones de acceso y las políticas de uso de las páginas oficiales.
+
+# 9. Resultado esperado
+
+El resultado final deberá ser una aplicación de escritorio desarrollada en Python que permita consultar, desde una única pantalla, todas las promociones vigentes en supermercados ofrecidas por Santander, Hipotecario y Supervielle.
+
+El usuario deberá poder abrir la aplicación y encontrar la información organizada por banco, sin necesidad de ingresar individualmente a cada página web.
+
+La aplicación deberá realizar las búsquedas y actualizaciones automáticamente, manteniendo la información lo más actualizada posible.
+
+# 10. Entrega del proyecto
+
+El desarrollador deberá entregar:
+
+1. Código fuente completo en Python.
+2. Aplicación funcional.
+3. Interfaz gráfica terminada.
+4. Base de datos SQLite.
+5. Sistema de actualización automática.
+6. Instrucciones para instalar y ejecutar la aplicación.
+7. Archivo requirements.txt con las dependencias necesarias.
+
+El código deberá estar organizado en módulos, documentado y preparado para futuras modificaciones.
+
+**PRIORIDAD PRINCIPAL:** desarrollar una aplicación sencilla, confiable y funcional, que recopile exclusivamente las promociones de supermercados de los tres bancos indicados y las presente de manera clara, ordenada y actualizada.
